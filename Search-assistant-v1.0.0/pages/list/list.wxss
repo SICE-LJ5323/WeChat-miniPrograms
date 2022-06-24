@@ -1,0 +1,42 @@
+/**list.wxss**/
+.section{
+  padding: 30rpx 30rpx;
+}
+
+.section input{
+  padding: 30rpx 30rpx;
+}
+
+.content{
+  padding: 0rpx 0rpx;
+}
+
+.content view.for-item{
+	font-size:25rpx;
+	padding:20rpx 50rpx;
+	background:#fff;
+	border-bottom:1px solid #ddd;
+	margin:10rpx 10rpx;
+	border-radius:15rpx;
+}
+.content view.for-item view{
+	padding:10rpx 0 0 0;
+}
+
+.content view span{
+  display:inline-block;
+}
+.content view span.wmax{
+	width:70%;
+}
+
+.content view span.wmid{
+	width:30%;
+}
+
+.content view span.wmin{
+	width:30%;
+}
+.content view .clear{
+	clear:both;
+}

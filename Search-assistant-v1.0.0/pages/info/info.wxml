@@ -1,0 +1,10 @@
+<!-- info.wxml -->
+<view>
+  <view class='name'>
+    <span>景区：</span>
+    <span>{{name}}</span>
+  </view>
+  <view class='m'>
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{distance}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location></map>
+  </view>
+</view>

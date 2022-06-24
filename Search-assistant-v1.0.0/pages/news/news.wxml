@@ -1,0 +1,89 @@
+<!-- news.wxml -->
+<view class="content">
+  <view class='navbg'>
+    <!-- 导航nav-S -->
+    <view class='nav'>
+      <!-- 可滚动视图区域。 -->
+      <!-- scroll-x 	Boolean 	false 	允许横向滚动 -->
+      <scroll-view class='scroll-view_H' scroll-x="true">
+        <view class='scroll-view_H'>
+          <view>
+            <view class="{{flag==0?'select':'normal'}}" id='0' bindtap='switchNav'>推荐</view>
+          </view>
+
+          <view>
+            <view class="{{flag==1?'select':'normal'}}" id='1' bindtap='switchNav'>热点</view>
+          </view>
+
+          <view>
+            <view class="{{flag==2?'select':'normal'}}" id='2' bindtap='switchNav'>人际</view>
+          </view>
+
+          <view>
+            <view class="{{flag==3?'select':'normal'}}" id='3' bindtap='switchNav'>教学</view>
+          </view>
+
+          <view>
+            <view class="{{flag==4?'select':'normal'}}" id='4' bindtap='switchNav'>娱乐</view>
+          </view>
+
+          <view>
+            <view class="{{flag==5?'select':'normal'}}" id='5' bindtap='switchNav'>生活</view>
+          </view>
+
+          <view>
+            <view class="{{flag==6?'select':'normal'}}" id='6' bindtap='switchNav'>贴图</view>
+          </view>
+
+          <view>
+            <view class="{{flag==7?'select':'normal'}}" id='7' bindtap='switchNav'>科研</view>
+          </view>
+
+          <view>
+            <view class="{{flag==8?'select':'normal'}}" id='8' bindtap='switchNav'>失物</view>
+          </view>
+
+          <view>
+            <view class="{{flag==9?'select':'normal'}}" id='9' bindtap='switchNav'>运动</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 导航nav-E -->
+    <view class='add'>+</view>
+  </view>
+  <!-- current 	Number 	0 	当前所在滑块的 index -->
+  <!-- 通过swiper的current属性绑定flag，让swiper的index与scroll-view绑定在一起，flag又与id同步，实现点击nav同步swipe的效果 -->
+  <swiper current="{{flag}}" style="height:900px">
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+    <swiper-item>
+      <news listData="{{news}}" />
+    </swiper-item>
+  </swiper>
+</view>

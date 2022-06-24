@@ -1,0 +1,15 @@
+/* info.wxss */
+.m {
+	padding: 20rpx;
+	margin-top: 30rpx;
+}
+
+.name {
+	margin-top: 30rpx;
+	padding: 20rpx;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+}
